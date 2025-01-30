@@ -92,7 +92,7 @@
                     <img src="assets/img/logo_wikrama.png" alt="logo" style="width: 95px; height: 95px; margin-top: 13px; margin-left: 10px;">
                     <div class="ml-2">
                         <h2 style="font-size: 28px; font-weight: bold; margin-bottom: 4px; margin-left: 15px; padding-top: 10px;">Nama Aplikasi</h2>
-                        <h2 style="font-size: 20px; margin-top: 4px; margin-left: 15px;">Aplikasi Beban </h2>
+                        <h2 style="font-size: 20px; margin-top: 4px; margin-left: 15px;">Nama Aplikasi </h2>
                     </div>
                 </div>
 
@@ -114,7 +114,7 @@
                     <h2>SELAMAT DATANG!</h2>
                 </div>
                 <div class="flex justify-center">
-                    <h2>Aplikasi Beban<br/> Manusia Sedunia</h2>
+                    <h2>Nama Aplikasi <br/> Nama Aplikasi </h2>
                 </div>
                 <div class="flex justify-center">
                     <div class="search-container">
