@@ -18,21 +18,21 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Auth::routes([
+    'register' => false
+]);
+
+Route::group(['middleware' => ['auth']], function ()
+{
+    Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::group(['middleware' => ['role:Admin']], function ()
+    {
+    
+        
+    });
+});
+
+
 Auth::routes();
 
-// autentikasi Users
-Route::middleware('auth')->group(function () {
-
-    // menu utama
-    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-    // hanya admin yang bisa akses
-    Route::middleware('role:Admin')->group(function () {
-
-        Route::get('/admin', function () {
-            return view('vendor.laratrust.admin');
-        })->name('Admin');
-
-    });
-
-});
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
